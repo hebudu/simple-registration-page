@@ -1,10 +1,11 @@
 body {
-    background:#f5a6d1;
+   
     background: linear-gradient(135deg, #6a11cb 0%, #86a8ff 45%, #f5a6d1 80%,#f5a6d1 100% );
     font-family: 'Poppins',sans-serif;
     min-height: 100vh;
     height: 100%;
     margin: 0;
+    background-attachment:fixed;
 
 }
 
@@ -125,12 +126,28 @@ select {
         font-family: Roboto;
     }
 
+.forgot a {
+    color: #86a8ff;
+    margin-top: 10px;
+    font-size: 25px;
+    text-align: center;
+    font-family: Roboto;
+    padding: 3px;
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+    .forgot a:hover {
+        text-decoration: underline;
+        color: #6a11cb;
+    }
+
 footer {
     text-align: center;
     margin-top: 50px;
     color: white;
     font-size: 25px;
-    background-color: #2c3e50;
+    background-color: black;
+    box-sizing: border-box;
 }
 
 nav {
@@ -150,70 +167,82 @@ nav {
  nav a:hover {
          text-decoration: underline;
             }
+
+ 
 /*For smartphone screen*/
 
 @media screen and (max-width:600px) {
-   body{
-       font-size: 16px;
-   }
-   .head{
-       font-size: 20px;
-       padding: 10px;
-   }
-   .bl,.block{
-       width:auto;
-       height: auto;
-       padding:15px;
-       margin: 15px;
+    
 
-   }
-   .sub{
-       font-size: 18px;
-       text-align:center;
-   }
-   .reg{
-       font-size: 16px;
+    .head {
+        font-size: 20px;
+        padding: 10px;
+    }
 
-   }
-   .reg2{
-       font-size:16px;
+    .bl, .block {
+        width: auto;
+        height: auto;
+        padding: 15px;
+        margin: 15px;
+    }
 
-   }
-   button{
-      font-size: 18px;
-      padding:8px 15px;
-      margin:8px auto;
-   }
-   input, select{
-       width: 100%;
-       font-size: 18px;
-       padding:8px;
-       box-sizing:border-box;
-   }
-   
-   nav a{
-       margin: 10px 5px;
-       font-size:18px;
-   }
-   footer{
-       font-size: 16px;
-       padding:10px ;
-   }
+    .sub {
+        font-size: 18px;
+        text-align: center;
+    }
 
+    .reg {
+        font-size: 16px;
+    }
+
+    .reg2 {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 8px 15px;
+        margin: 8px auto;
+    }
+
+    input, select {
+        width: 100%;
+        font-size: 18px;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+
+    nav a {
+        margin: 10px 5px;
+        font-size: 18px;
+    }
+
+    footer {
+        font-size: 16px;
+        padding: 10px;
+    }
+    .forgot a{
+    font-size:16px;
+
+     }
+}
 
    /*For tablets*/
-    @media screen (min-width:601px) and (max-width:1024px) {
+    @media screen and (min-width:601px) and (max-width:1024px) {
         .head {
             font-size: 22px;
             padding: 15px;
         }
 
         .bl, .block {
-            max-width:1100px;
-            width: 90%;
+         
+            max-width: 1100px;
+            width:90%;
+            min-width:300px;
             height: auto;
             padding: 20px;
             margin: 20px auto;
+
         }
 
         input, select {
@@ -239,5 +268,8 @@ nav {
             font-size: 18px;
             padding: 15px;
         }
+ .forgot a{
+        font-size:20px;
     }
-}
+    }
+   
