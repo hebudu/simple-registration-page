@@ -171,7 +171,7 @@ nav {
  
 /*For smartphone screen*/
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:700px) {
     
 
     .head {
@@ -228,7 +228,7 @@ nav {
 }
 
    /*For tablets*/
-    @media screen and (min-width:601px) and (max-width:1024px) {
+    @media screen and (min-width:701px) and (max-width:1200px) {
         .head {
             font-size: 22px;
             padding: 15px;
@@ -273,3 +273,4 @@ nav {
     }
     }
    
+
